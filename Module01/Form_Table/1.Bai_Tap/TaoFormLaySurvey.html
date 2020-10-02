@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo Form Lấy Survey</title>
+    <style>
+        div{
+            margin: 5px;
+        }
+        .contain{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        div select{
+            width: 350px;
+            font-size: medium;
+        }
+        .title{
+            font-weight: bold;
+            font-size: small;
+        }
+        .titlebang{
+            text-align: left;
+            font-weight: bold;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <header >
+            <hr>
+            <h2>Market Research Survey</h2>
+            <div style="font-size: small">Please take a few moments to complete this satisfaction survey.</div>
+            <hr>
+        </header>
+
+        <div class="contain">
+            <div class="title">
+                <label>What is your age range?</label>
+            </div>
+        <div>
+            <select name="age" >
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-50">35-50</option>
+                <option value="50+">50+</option>
+            </select>
+        </div>
+        </div>
+
+        <div class="contain">
+            <div class="title">
+                <label>What is your yearly income range?</label>
+            </div>
+            <div>
+                <select name="income" >
+                    <option value="0-25000">$0 - $25000</option>
+                    <option value="25001-50000">$25001 - $50000</option>
+                    <option value="50001-100000">$50001 - $100000</option>
+                    <option value="100000+">$100000+</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="contain">
+            <div class="title">
+                <label>Gender</label>
+            </div>
+            <div>
+                <label><input name="gender" value="Men" type="radio"/> Male </label> <br/>
+                <label><input name="gender" value="Women" type="radio"/> Female </label> <br/>
+            </div>
+        </div>
+
+        <div class="contain">
+            <div class="title">
+                <label>Which of the following products have your purchased in the last 2 months. Please check all that apply.</label>
+            </div>
+            <div>
+                <label><input name="product" value="Product 01" type="checkbox"/> Product 01 </label> <br/>
+                <label><input name="product" value="Product 02" type="checkbox"/> Product 02 </label> <br/>
+                <label><input name="product" value="Product 03" type="checkbox"/> Product 03 </label> <br/>
+            </div>
+        </div>
+
+        <div class="contain">
+            <div class="title">
+                <label>How often would you use our new product?</label>
+            </div>
+            <div>
+                <label><input name="often" value="Daily" type="radio"/> Daily </label> <br/>
+                <label><input name="often" value="Weekly" type="radio"/> Weekly </label> <br/>
+                <label><input name="often" value="Monthly" type="radio"/> Monthly </label> <br/>
+            </div>
+        </div>
+
+        <div class="contain">
+            <div class="title">
+                <label>What would you pay for the new product?</label>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td rowspan="2" style="vertical-align: top"> $ </td>
+                        <td><input type="text" name="dollars" size="10"></td>
+                        <td> . </td>
+                        <td><input type="text" name="cents" maxlength="2" size="2"></td>
+                    </tr>
+                    <tr>
+                        <td> Dollars </td>
+                        <td> </td>
+                        <td> Cents </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="contain">
+            <div class="title">
+                <label>What features would you like to see in the new product.</label>
+            </div>
+            <div>
+                <textarea name="features" rows="8" cols="100"></textarea>
+            </div>
+        </div>
+
+        <div class="contain">
+            <div class="title">
+                <label>Please rate your level of agreement with the following statements</label>
+            </div>
+            <div>
+                <table style="text-align: center;font-size: small" border="1">
+                    <tr>
+                        <th></th>
+                        <td width="100"> Strongly Disagree </td>
+                        <td width="100"> Disagree </td>
+                        <td width="100"> Agree </td>
+                        <td width="100"> Strongly Agree </td>
+                    </tr>
+                    <tr>
+                        <th class="titlebang" width="250">Our products are priced fairly</th>
+                        <td>
+                            <input type="radio" name="PricedFairly" value="1">
+                            <br>
+                            <label>1</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="PricedFairly" value="2">
+                            <br>
+                            <label>2</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="PricedFairly" value="3">
+                            <br>
+                            <label>3</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="PricedFairly" value="4">
+                            <br>
+                            <label>4</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="titlebang">Our products are high quality</th>
+                        <td>
+                            <input type="radio" name="HighQuality" value="1">
+                            <br>
+                            <label>1</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="HighQuality" value="2">
+                            <br>
+                            <label>2</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="HighQuality" value="3">
+                            <br>
+                            <label>3</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="HighQuality" value="4">
+                            <br>
+                            <label>4</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="titlebang">You would recommend our product to a friend or coworker.</th>
+                        <td>
+                            <input type="radio" name="RecommentProduct" value="1">
+                            <br>
+                            <label>1</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="RecommentProduct" value="2">
+                            <br>
+                            <label>2</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="RecommentProduct" value="3">
+                            <br>
+                            <label>3</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="RecommentProduct" value="4">
+                            <br>
+                            <label>4</label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="contain">
+            <input type="submit" style="font-size: large;margin-left: 5px">
+        </div>
+
+    </form>
+</body>
+</html>

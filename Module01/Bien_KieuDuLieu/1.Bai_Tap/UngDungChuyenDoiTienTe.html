@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập - Ứng dụng chuyển đổi tiền tệ</title>
+    <style>
+        .nav {
+            background-color: #5f6062;
+            color: white;
+            list-style-type: none;
+            text-align: center;
+            margin: auto;
+            padding: 0;
+            width: 80%;
+        }
+
+        .nav li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px;
+        }
+        .nav li button{
+            color: #ffffff;
+            background: #3048aa;
+
+        }
+        #result {
+            color: #3048aa;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <ul class="nav">
+            <li>
+                <label>Amount</label>
+                <br/>
+                <input id="sotien" type="text" name="sotien">
+            </li>
+            <li>
+                <label>From Currency</label>
+                <br/>
+                <select id="fromCurrency" style="width: 100px;" name="FromCurrency">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </li>
+            <li>
+                <label style="float: top">To Currency</label>
+                <br/>
+                <select id="toCurrency" style="width: 100px;text-align: center" name="ToCurrency">
+                    <option value="USD">USD</option>
+                    <option value="VND">VND</option>
+                </select>
+            </li>
+            <li>
+                <button type="button" onclick="ChuyenDoiTienTe()">Convert</button>
+            </li>
+        </ul>
+
+    </form>
+    <p id="result"></p>
+    <script src="UngDungChuyenDoiTienTe.js"></script>
+</body>
+</html>
